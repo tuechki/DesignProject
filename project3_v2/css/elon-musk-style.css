@@ -1,28 +1,26 @@
 body {
     display: grid;
     grid-template-areas:
-            "header header header"
-            "nav nav nav"
-            "name name name"
-            "article article earlyLife"
-            "career career personalLife"
-            "moreInfo moreInfo tableWork"
-            "references references references"
-            "footer footer footer";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+            "header header"
+            "nav nav"
+            "name name"
+            "article earlyLife"
+            "career moreInfo"
+            "tables tables"
+            "otherWork otherWork"
+            "references references"
+            "footer footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
 }
-/*header, footer, article, nav, div {
-    padding: 1.2em;
-}*/
 
 
-article, #references, #pageFooter{
+article, #references, #pageFooter, #tables, #otherWork{
     background-color: #ffffff;
     border-radius: 20px;
     padding: 15px;
@@ -72,10 +70,6 @@ article, #references, #pageFooter{
     grid-area: references;
 }
 
-#tableWork{
-    grid-area: tableWork;
-}
-
 #name{
     grid-area: name;
 }
@@ -91,42 +85,21 @@ article, #references, #pageFooter{
                 "article"
                 "earlyLife"
                 "career"
-                "personalLife"
                 "moreInfo"
-                "tableWork"
+                "tables"
+                "otherWork"
                 "references"
                 "footer";
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
-    #tables, #otherWork{
-        background-color: #ffffff;
-        border-radius: 20px;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 10px 6px 7px #ed090d;
-        overflow-scrolling: auto;
-    }
 
 }
 
 
 
 @media (min-width: 751px) and (max-width: 1249px) {
-
-    #tableWork{
-        background-color: #ffffff;
-        border-radius: 20px;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 10px 6px 7px #ed090d;
-        overflow-scrolling: auto;
-    }
-
-    #otherWork{
-        margin-top: 50px;
-    }
 
 
     li {
@@ -137,53 +110,14 @@ article, #references, #pageFooter{
 }
 
 
-@media all and (min-width: 1050px) {
-    body {
-        grid-template-areas:
-                "header header"
-                "nav nav"
-                "name name"
-                "article earlyLife"
-                "career personalLife"
-                "moreInfo tableWork"
-                "references references"
-                "footer footer";
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 700px 1fr ;
-    }
 
-}
-
-
-
-/* Working even on desktops larger than 1200px */
 @media all and (min-width: 1250px) {
-    body {
-        grid-template-areas:
-                "header header header header"
-                "nav nav nav nav"
-                "name name name name"
-                "article article earlyLife personalLife"
-                "career career moreInfo moreInfo"
-                "tableWork tableWork tableWork tableWork"
-                "references references references references"
-                "footer footer footer footer";
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+
 
     #otherWork ul{
-        padding-left: 30%;
+        padding-left: 40%;
     }
 
-    #tables, #otherWork{
-        background-color: #ffffff;
-        border-radius: 20px;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 10px 6px 7px #ed090d;
-        overflow-scrolling: auto;
-    }
 
     li {
         float:left;

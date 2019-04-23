@@ -1,0 +1,115 @@
+body {
+    display: grid;
+    grid-template-areas:
+            "header header"
+            "nav nav"
+            "slideShow slideShow"
+            "article1 article2"
+            "article3 article4"
+            "footer footer";
+    grid-template-rows: 1fr 1fr 285px 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+article, #references, #pageFooter, #slideShow{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 10px 6px 7px #ed090d;
+    overflow-scrolling: auto;
+}
+
+
+#pageHeader {
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+#article1 {
+    grid-area: article1;
+    max-width: 700px;
+}
+
+#article2 {
+    grid-area: article2;
+    max-width: 700px;
+}
+
+#article3 {
+    grid-area: article3;
+    max-width: 700px;
+}
+
+#article4 {
+    grid-area: article4;
+    max-width: 700px;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+
+@media all and (max-width: 750px) {
+    body {
+        grid-template-areas:
+                "header"
+                "nav"
+                "slideShow"
+                "article1"
+                "article2"
+                "article3"
+                "article4"
+                "footer";
+        grid-template-rows: 1fr 1fr 290px 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+article a{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+@media all and (min-width: 751px){
+
+
+    li {
+        float:left;
+
+    }
+
+}
+
+#slideShow {
+    grid-area: slideShow;
+    position: relative;
+}
+
+#slideShow > div {
+    position: absolute;
+    left: 50%;
+    margin-left: -112px;
+    width: 225px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
