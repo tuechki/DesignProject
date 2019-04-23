@@ -17,10 +17,6 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-/*header, footer, article, nav, div {
-    padding: 1.2em;
-}*/
-
 
 article, #references, #pageFooter{
     background-color: #ffffff;
@@ -112,7 +108,6 @@ article, #references, #pageFooter{
 }
 
 
-
 @media (min-width: 751px) and (max-width: 1249px) {
 
     #tableWork{
@@ -126,12 +121,6 @@ article, #references, #pageFooter{
 
     #otherWork{
         margin-top: 50px;
-    }
-
-
-    li {
-        float:left;
-
     }
 
 }
@@ -183,11 +172,6 @@ article, #references, #pageFooter{
         margin: 15px;
         box-shadow: 10px 6px 7px #ed090d;
         overflow-scrolling: auto;
-    }
-
-    li {
-        float:left;
-
     }
 
 }

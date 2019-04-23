@@ -98,30 +98,10 @@ article, #references, #pageFooter, #tables, #otherWork{
 }
 
 
-
-@media (min-width: 751px) and (max-width: 1249px) {
-
-
-    li {
-        float:left;
-
-    }
-
-}
-
-
-
 @media all and (min-width: 1250px) {
-
 
     #otherWork ul{
         padding-left: 40%;
-    }
-
-
-    li {
-        float:left;
-
     }
 
 }
